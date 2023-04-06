@@ -2,7 +2,7 @@
 service: todolist
 
 # Name of the container image.
-image: user/todolist
+image: talhashoaib/todolist
 
 # Deploy to these servers.
 servers:
