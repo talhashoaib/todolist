@@ -7,6 +7,7 @@ ADD . /myapp
 WORKDIR /myapp
 RUN bundle install
 
-EXPOSE 3999
+RUN RAILS_ENV=$RAILS_ENV bin/rails assets:precompile
 
-CMD rails s -b 0.0.0.0 -p 3999
+EXPOSE 3999
+CMD RAILS_ENV=$RAILS_ENV bundle exec rails s -b 0.0.0.0 -p 3000
