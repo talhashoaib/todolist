@@ -9,4 +9,4 @@ RUN bundle install
 
 EXPOSE 3999
 
-CMD ["bash"]
+CMD rails s -b 0.0.0.0 -p 3999
