@@ -6,7 +6,8 @@ image: talhashoaib/todolist
 
 # Deploy to these servers.
 servers:
-  - 185.217.125.14
+  web:
+    - 185.217.125.14
 
 # Credentials for your image host.
 registry:
